@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="text/html;charset=UTF-8" http-equiv="content-type">
+  <title>Geocaching - Enthusiasmus</title>
+  <link type="text/css" rel="stylesheet" href="assets/css/main.css"/>
+</head>
+<body>
+<header>GEOCACHING</header>
+<nav>
+  <div class="menuItem" id="menuLetters">
+    <div>
+      <div class="logo"><span> </span></div>
+      <div class="title">Buchstaben in Zahlen</div>
+    </div>
+  </div>
+  <div class="menuItem" id="menuCoordinates">
+    <div>
+      <div class="logo"><span></span></div>
+      <div class="title">Koordinaten Umwandler</div>
+    </div>
+  </div>
+</nav>
+<div id="content">
+  <div id="coordinatesConverter">
+    <div>
+      <span>Grad und Bogenminuten</span>
+      <input placeholder="N47° 47.918 E13° 2.730" id="degreesArcMinutes"/>
+    </div>
+    <div>
+      <span>Grad</span>
+      <input placeholder="47.798642 13.045515" id="degrees"/>
+    </div>
+    <div>
+      <span>Grad, Bogenminuten und Bogensekunden</span>
+      <input placeholder="N47° 47' 55.111&quot; 13° 2' 43.854&quot;" id="degreesArcMinutesArcSeconds"/>
+    </div>
+    <p>
+      Umrechnung laut <a href="http://www.cachewiki.de/wiki/Koordinaten">cachewiki.de</a>. Für die Richtigkeit der
+      Berechnung wird keine Verantwortung übernommen.
+    </p>
+  </div>
+  <div id="coordinatesFromMap">
+    <div id="coordinatesMap"></div>
+    <div id="map"></div>
+  </div>
+  <div id="letterNumberCalculator">
+    <div class="input">
+      <label for="a1z26">A=1 / Z=26</label>
+      <input type="radio" name="calculateType" id="a1z26" value="a1z26" checked="checked"/><br>
+      <label for="a0z25">A=0 / Z=25</label>
+      <input type="radio" name="calculateType" id="a0z25" value="a0z25"/><br>
+      <label for="a26z1">A=26 / Z=1</label>
+      <input type="radio" name="calculateType" id="a26z1" value="a26z1"/><br>
+      <label for="a25z0">A=25 / Z=0</label>
+      <input type="radio" name="calculateType" id="a25z0" value="a25z0"/><br>
+      <input placeholder="Hier Wörter, Sätze und/oder Zahlen einfügen" id="text"/><br>
+    </div>
+    <div class="output">
+      <div class="addition"></div>
+      <div class="subtraction"></div>
+      <div class="multiplication"></div>
+      <div class="division"></div>
+      <div class="oneDigitCrossSum"></div>
+    </div>
+  </div>
+</div>
+<footer>©® 2014 - <a href="mailto:lukas.wanko@gmx.at">Enthusiasmus</a> - Salzburg, Österreich</footer>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="assets/js/lib/OpenLayers.js"></script>
+<script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+</html>
